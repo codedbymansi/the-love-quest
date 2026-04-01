@@ -159,7 +159,7 @@
             if(val.length < 1) { alert("Answer correctly to proceed, babe! ❤️"); return; }
             document.getElementById('q' + curr).classList.add('hidden');
             let nxt = curr + 1;
-            if(nxt <= 25) {
+            if(nxt <= 26) {
                 document.getElementById('q' + nxt).classList.remove('hidden');
                 document.getElementById('lvl-txt').innerText = nxt;
                 document.getElementById('bar-fill').style.width = (nxt * 4) + "%";
@@ -167,10 +167,10 @@
         }
 
         function showFinale() {
-            document.getElementById('q25').classList.add('hidden');
+            document.getElementById('q26').classList.add('hidden');
             document.getElementById('finale').classList.remove('hidden');
             document.getElementById('bar-fill').style.width = "100%";
-            document.getElementById('lvl-txt').innerText = "25";
+            document.getElementById('lvl-txt').innerText = "26";
             confetti({ particleCount: 200, spread: 70, origin: { y: 0.6 } });
         }
 
